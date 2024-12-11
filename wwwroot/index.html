@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="main.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>SUDOKU</h1>
+    <hr />
+    <h2>Új sudoku felvétele</h2>
+    <p><input id="name" type="text" placeholder="Név" /> Létrehozó neve</p>
+    <p><input id="racs" type="text" placeholder="Meglévő rács" /> 81 elemű számsor (9x9), az üres értékek helyén 0-val</p>
+    <p><input id="nehezseg" type="text" placeholder="Nehézség" /> Megadható értékek: Easy, Medium, Hard, Expert</p>
+    <p><input id="letrehozasIdeje" type="datetime-local" /> Létrehozás ideje</p>
+    <p><button id="new">Új!</button></p>
+    <hr />
+    <h2>Meglévő sudoku törlése</h2>
+    <p><input id="deleteId" type="text" placeholder="SudokuID a törléshez" /></p>
+    <p><button id="deleteButton">Törlés</button></p>
+    <hr />
+    <h2>Meglévő sudoku betöltése</h2>
+    <p><input id="betoltId" type="text" placeholder="SudokuID a betöltéshez" /></p>
+    <p><button id="betoltButton">Betöltés</button></p>
+    <hr />
+    <table class="sudoku-table">
+        <tbody id="tb_sudoku">
+        </tbody>
+    </table>
+    <table>
+        <thead>
+            <tr>
+                <th>PuzzleId</th>
+                <th>Name</th>
+                <th>Grid</th>
+                <th>DifficultyLevel</th>
+                <th>DateCreated</th>
+                <th>Solutions</th>
+            </tr>
+        </thead>
+        <tbody id="tb_hp">
+        </tbody>
+    </table>
+
+    <script src="hozott.js"></script>
+</body>
+</html>

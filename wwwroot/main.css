@@ -1,0 +1,59 @@
+﻿table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Sudoku specifikus stílusok */
+.sudoku-table {
+    width: auto;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+    .sudoku-table td {
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        vertical-align: middle;
+        border: 1px solid transparent;
+        cursor: pointer;
+    }
+
+    .sudoku-table tr:nth-child(3n) td {
+        border-bottom: 2px solid black;
+    }
+
+    .sudoku-table td:nth-child(3n) {
+        border-right: 2px solid black;
+    }
+
+    .sudoku-table td:nth-child(3n+1) {
+        border-left: 2px solid black;
+    }
+
+    .sudoku-table tr:nth-child(3n+1) td {
+        border-top: 2px solid black;
+    }
+
+    .sudoku-table td:hover {
+        background-color: #f0f0f0;
+    }
+
+    .sudoku-table td[data-highlight="true"] {
+        background-color: #ffeeba;
+    }
